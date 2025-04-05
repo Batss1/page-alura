@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root{
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     box-sizing: border-box;
 }
 
 .titulo-destaque {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
@@ -30,12 +40,12 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primaria);
     font-size: 36px;
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
 }
 
@@ -54,34 +64,34 @@ body {
     gap: 16px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
     padding: 16px 0;
     text-decoration: none;
-    color: #F6F6F6;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
     font-weight: 600;
 
 }
 
 .apresentacao__links__subtitulo {
     font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primaria);
     font-weight: 400;
 }
 
 .rodape {
     text-align: center;
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     padding: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
 
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
     width: 400px;
 }
 
@@ -95,8 +105,8 @@ body {
 }
 
 .cabecalho__menu__link {
-    color: #22D4FD;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
